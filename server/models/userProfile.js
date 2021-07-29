@@ -31,12 +31,20 @@ const profileSchema = new Schema({
     }
 });
 
+// sets up pre-save middleware to create the password
 profileSchema.pre('save', async function (next) {
     if (this.isNew || this.isModified('password')) { 
         const saltRounds = 10;
         this.password = await bcrypt.hash(this.password, saltRounds);
     }
+
+    next();
 });
+
+// compares the incoming password with the stored, hashed password
+profileSchema.methods.isCorrectPassword = async function (password) {
+    return bcrypt.compare(password, this.password);
+};
 
 const userProfile = ('userProfile', profileSchema);
 
