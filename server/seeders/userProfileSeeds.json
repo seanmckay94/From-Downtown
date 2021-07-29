@@ -3,7 +3,8 @@
         "first_name": "Sean",
         "last_name": "McKay",
         "username": "Downtown funky stuff malone",
-        "email": "test2@tester.com"
+        "email": "test2@tester.com",
+        "password": "tester"
     },
     {
         "first_name": "Liam",
