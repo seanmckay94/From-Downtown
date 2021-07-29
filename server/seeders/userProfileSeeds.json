@@ -1,0 +1,15 @@
+[
+    {
+        "first_name": "Sean",
+        "last_name": "McKay",
+        "username": "Downtown funky stuff malone",
+        "email": "test2@tester.com"
+    },
+    {
+        "first_name": "Liam",
+        "last_name": "McKay",
+        "username": "Coffee Black",
+        "email": "test@tester.com",
+        "password": "tester"
+    }
+]
