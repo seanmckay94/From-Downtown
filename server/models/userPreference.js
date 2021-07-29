@@ -8,7 +8,7 @@ const preferenceSchema = new Schema ({
         // Add in once API endpoints and routes have been built
     },
     rivalry_preference: {
-        // Add in once API endpoints and routes have been built (Use drop down selection)
+        // Add in once API endpoints and routes have been built (Use drop down selection through CreateUser)
     },
 });
 
