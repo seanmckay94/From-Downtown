@@ -1,14 +1,25 @@
 const { Schema, model } = require('mongoose');
 
+const playersSchema = new Schema ({
+    players: {
+        type: String,
+    }
+})
+
 const preferenceSchema = new Schema ({
     team_preference: {
-        // Add in reference to drop-down selection given on CreateUser once built
+        type: String,
+        required: true,
+        trim: true,
     },
     player_preference: {
-        // Add in once API endpoints and routes have been built
+        players: [playersSchema],
+        type: String,
+        trim: true,
     },
     rivalry_preference: {
-        // Add in once API endpoints and routes have been built (Use drop down selection through CreateUser)
+        type: String,
+        trim: true,
     },
 });
 
