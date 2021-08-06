@@ -1,0 +1,42 @@
+@font-face {
+    font-family: ILoveThisGame;
+    src: local('ILoveThisGame'), url(../../assets/fonts/LmsILoveThisGame.ttf) format('truetype');
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --header-font: 'ILoveThisGame';
+    --transition-speed: 600ms;
+    --bg-color: rgb(53, 53, 53);
+    --color-orange: rgb(243, 123, 24);
+}
+
+.header-container {
+    display: inline-flex;
+    background-color: white;
+    width: 100%;
+    padding: 2rem;
+}
+
+.logo-container {
+    width: 25%;
+}
+
+.main-logo {
+    align-items: center;
+    size: 100%;
+}
+
+.header-text {
+    color: var(--color-orange);
+    width: 75%;
+    padding-left: 4rem;
+    font-family: var(--header-font);
+    text-align: center;
+    font-size: 4rem;
+    justify-content: right;
+}
+
+
+@media only screen and (min-width: 600px)

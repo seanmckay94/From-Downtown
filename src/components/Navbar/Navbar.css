@@ -1,0 +1,135 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --header-font: 'Bebas Nueu', cursive;
+    --transition-speed: 600ms;
+    --bg-color: rgb(53, 53, 53);
+    --color-orange: rgb(243, 123, 24);
+}
+
+body {
+    color: black;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-right: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 5rem;
+    transition: width 600ms ease;
+    position: fixed;
+    background-color: var(--bg-color);
+    right: 0;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.line-break {
+    width: 80%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:hover {
+    transition: var(--transition-speed);
+    color: var(--color-orange);
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    transition: var(--transition-speed);
+    color: var(--color-orange);
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.nav-link:hover {
+    transition: var(--transition-speed);
+    color: var(--color-orange);
+    display: flex;
+    flex-direction: row;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    color: var(--color-orange);
+    font-family: 'ILoveThisGame';
+    letter-spacing: .2rem;
+}
+
+.nav-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--color-orange);
+    background-color: var(--bg-color);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.nav-logo:hover {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+
+.link-text:hover {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: var(--transition-speed);
+    padding-left: 2rem;
+    color: var(--color-orange);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        right: 0;
+        height: 5rem;
+        padding-top: 5rem;
+        position: fixed;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100%;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .nav-logo {
+        margin-left: 11rem;
+    }
+}
