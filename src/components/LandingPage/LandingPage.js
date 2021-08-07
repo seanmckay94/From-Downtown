@@ -9,6 +9,7 @@ import JumpShot from '../../assets/img/jump_shot.jpg';
 export default function LandingPage() {
 
     return (
+        
         <HeroSlider className="hero-slider"
         slidingAnimation="left-to-right"
         orientation="horizontal"
@@ -51,6 +52,6 @@ export default function LandingPage() {
                 backgroundAttachment: 'fixed',
                 backgroundPosition: 'center center',
             }}/>
-        </HeroSlider> 
+        </HeroSlider>
     )
 }
